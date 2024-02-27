@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 
 public class Application {
-
     public static void main(String[] args) {
 
         /* 수업목표. File 클래스의 사용 용법을 이해할 수 있다. */
@@ -21,7 +20,7 @@ public class Application {
             boolean creatSuccess = file.createNewFile();
 
             System.out.println("creatSuccess : " + creatSuccess);
-            // true이면서 하위의 txt 파일 생성됨
+            // true 이면서 하위의 txt 파일 생성됨
             // >>true > false(2번째 생성부터 나옴)
 
         } catch (IOException e) {

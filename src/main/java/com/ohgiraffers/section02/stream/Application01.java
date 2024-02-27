@@ -46,7 +46,18 @@ public class Application01 {
                 System.out.println(value);
 
                 System.out.println((char) value);
+
+//                1. value는 파일에서 읽어들인 바이트 값을 그대로 출력하기 때문에, 이 값은 0에서 255 사이의 정수이다.
+//                이 값은 해당 바이트에 대한 ASCII 문자 코드가 아니므로,
+//                        정수로 출력된다.
+//                2. (char)value는 value 변수에 저장된 정수를 해당하는 ASCII 문자로 변환하여 출력한다.
+//                        즉, 각 정수 값에 해당하는 ASCII 문자가 출력된다.
+//
+//                따라서, value 변수는 읽어들인 바이트 값을 정수로 출력하고, (char)value는 해당 ASCII 코드에 해당하는 문자를 출력한다.
+//                이 두 값은 서로 다르게 나올 수 있습니다.
+
             }
+
 
             /* 필기.
             *   한글 한 글자에 3byte 이기 떄문에 1byte 씩 값을 읽어오면 글자가 깨진다.
