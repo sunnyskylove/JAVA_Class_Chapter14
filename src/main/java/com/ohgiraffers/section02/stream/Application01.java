@@ -48,8 +48,7 @@ public class Application01 {
                 System.out.println((char) value);
 
 //                1. value는 파일에서 읽어들인 바이트 값을 그대로 출력하기 때문에, 이 값은 0에서 255 사이의 정수이다.
-//                이 값은 해당 바이트에 대한 ASCII 문자 코드가 아니므로,
-//                        정수로 출력된다.
+//                   이 값은 해당 바이트에 대한 ASCII 문자 코드가 아니므로, 정수로 출력된다.
 //                2. (char)value는 value 변수에 저장된 정수를 해당하는 ASCII 문자로 변환하여 출력한다.
 //                        즉, 각 정수 값에 해당하는 ASCII 문자가 출력된다.
 //
