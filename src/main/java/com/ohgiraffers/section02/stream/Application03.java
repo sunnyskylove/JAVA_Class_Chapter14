@@ -30,13 +30,16 @@ public class Application03 {
             /* 1번 인덱스부터 3의 길이만큼 파일에 내보내기 */
             fout.write(barr,1,3);           // write 의 3번째 것~!
 
+
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
 
         } catch (IOException e) {
             throw new RuntimeException(e);
 
+
         } finally {
+
             if(fout != null){
 
                 try {
