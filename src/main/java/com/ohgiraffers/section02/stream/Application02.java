@@ -35,6 +35,7 @@ public class Application02 {
 
             for(int i = 0; i <carr.length; i++) {
                 System.out.println(carr[i]);         // 한번 읽힌 건 재사용이 안되기 떄문에, 위의 int value~while 밑까지 주석처리!
+
             }
 
         } catch (FileNotFoundException e) {

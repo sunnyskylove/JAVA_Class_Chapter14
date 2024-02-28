@@ -20,24 +20,27 @@ public class Application04 {
         try {
             fw = new FileWriter("src/main/java/com/ohgiraffers/section02/stream/testWriter.txt");
 
-            fw.write(97);
+            fw.write(97);               // 아스키코드인 a로 출력됨(testWriter)
 
             fw.write('A');
 
             fw.write(new char[] {'a', 'p', 'p', 'l' ,'e'});
 
-            fw.write("하이미디어");
+            fw.write("하이미디어");                  // 다 이어져서 나옴
 
         } catch (IOException e) {
             throw new RuntimeException();
+
         } finally {
 
             if(fw != null) {
 
                 try {
                     fw.close();
+
                 } catch (IOException e) {
                     throw new RuntimeException(e);
+
                 }
 
             }

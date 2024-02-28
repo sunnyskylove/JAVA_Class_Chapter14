@@ -25,6 +25,7 @@ public class Application {
 
         } catch (IOException e) {
             throw new RuntimeException(e);
+
         }
 
         System.out.println("파일의 크기 : " + file.length() + "byte");
@@ -35,6 +36,7 @@ public class Application {
         // 파일의 삭제(삭제 성공 후 성공 실패 여부를 boolean 타입으로 반환한다.)
         boolean deleteSuccess = file.delete();
         System.out.println("deleteSuccess = " + deleteSuccess);         // App 하위의 txt 파일 없어진다.
+
     }
 
 }
